@@ -18,9 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [application registerUserNotificationSettings:[UIUserNotificationSettings
-                                                   settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|
-                                                   UIUserNotificationTypeSound categories:nil]];
+//    [application registerUserNotificationSettings:[UIUserNotificationSettings
+//                                                   settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|
+//                                                   UIUserNotificationTypeSound categories:nil]];
     return YES;
 }
 
@@ -136,12 +136,12 @@
     return items;
 }
 
--(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-    
-    UIAlertView *notificationAlert = [[UIAlertView alloc] initWithTitle:@"Notification"    message:@"This local notification"
-                                                               delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    
-    [notificationAlert show];
+//-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+//    
+//    UIAlertView *notificationAlert = [[UIAlertView alloc] initWithTitle:@"Notification"    message:@"This local notification"
+//                                                               delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+//    
+//    [notificationAlert show];
     // NSLog(@"didReceiveLocalNotification");
-}
+//}
 @end
